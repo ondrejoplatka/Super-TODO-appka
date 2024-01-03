@@ -29,6 +29,26 @@ app.delete('/task/:id', (req, res) => {
   res.status(204).send();
 });
 
+// PUT endpoint to update a task by id
+app.put('/task/:id', (req, res) => {
+  const id = parseInt(req.params.id);
+  let found = false;
+
+  tasks = tasks.map(task => {
+    if (task.id === id) {
+      found = true;
+      return { ...task, content: req.body.content };
+    }
+    return task;
+  });
+
+  if (found) {
+    res.status(200).send();
+  } else {
+    res.status(404).send('Task not found');
+  }
+});
+
 app.get('/', (req, res) => {
   res.send('Welcome to the Todo App!');
 });
