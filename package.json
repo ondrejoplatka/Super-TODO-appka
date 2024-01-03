@@ -1,0 +1,19 @@
+{
+  "name": "super-todo-appka",
+  "version": "1.0.0",
+  "description": "Moje první super TOTO appka",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ondrejoplatka/Super-TODO-appka.git"
+  },
+  "author": "Ondřej Oplatka",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ondrejoplatka/Super-TODO-appka/issues"
+  },
+  "homepage": "https://github.com/ondrejoplatka/Super-TODO-appka#readme"
+}
