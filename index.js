@@ -22,6 +22,13 @@ app.post('/task', (req, res) => {
   res.status(201).json(task);
 });
 
+// DELETE endpoint to delete a task by id
+app.delete('/task/:id', (req, res) => {
+  const id = parseInt(req.params.id);
+  tasks = tasks.filter(task => task.id !== id);
+  res.status(204).send();
+});
+
 app.get('/', (req, res) => {
   res.send('Welcome to the Todo App!');
 });
