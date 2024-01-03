@@ -29,8 +29,6 @@ app.delete('/task/:id', (req, res) => {
   res.status(204).send();
 });
 
-// flag{4a8aabd0-6342-4615-84ad-b668361f0673}
-
 app.get('/', (req, res) => {
   res.send('Welcome to the Todo App!');
 });
